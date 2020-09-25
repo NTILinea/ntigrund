@@ -35,4 +35,39 @@ font-family: impact;
             background: hotpink;
             width: 50%;
         }
-        
+
+#container {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 2fr auto 5fr;
+    background: cadetblue;
+    grid-template-areas: 
+    " hd hd "
+    " mn as " 
+    " ft ft ";
+
+}
+
+
+    header { 
+        background: aquamarine;
+        grid-area: hd;
+    
+    }
+    main {
+grid-area: mn;
+        background: brown;
+        overflow: scroll;
+    }
+
+    aside {
+        grid-area: as;
+    
+    background: blueviolet;
+    }
+
+    footer {
+grid-area: ft;
+background: aqua;
+    }
